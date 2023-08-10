@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script src="js/scripts.js"></script>
-  <title>A fantastical adventure</title>
-</head>
-<body>
-  <h1>Fill in the blanks to write your story!</h1>
-  <form>
-    <label for="person1Input">A name</label>
-    <input id="person1Input" type="text" name="person1Input">
-    <label for="person2Input">Another name</label>
-    <input id="person2Input" type="text" name="person2Input">
-    <label for="animalInput">An animal</label>
-    <input id="animalInput" type="text" name="animalInput">
-    <label for="exclamationInput">An exclamation</label>
-    <input id="exclamationInput" type="text" name="exclamationInput">
-    <label for="verbInput">A past tense verb</label>
-    <input id="verbInput" type="text" name="verbInput">
-    <label for="nounInput">A noun</label>
-    <input id="nounInput" type="text" name="nounInput">
-    <button type="submit">Show me the story!</button>
-  </form>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script src="js/scripts.js"></script>
+    <title>A fantastical adventure</title>
+  </head>
+  <body>
+    <h1 class="container">Fill in the blanks to write your story!</h1>
+    <form class="inputForm container">
+      <div class="form-group">
+        <label for="person1Input">A name</label>
+        <input id="person1Input" type="text" name="person1Input" placeholder="A Name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="person2Input">Another name</label>
+        <input id="person2Input" type="text" name="person2Input" placeholder="Another Name" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label for="animalInput">An animal</label>
+        <input id="animalInput" type="text" name="animalInput" placeholder="An Animal" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label for="exclamationInput">An exclamation</label>
+        <input id="exclamationInput" type="text" placeholder="An Exclamation" name="exclamationInput" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label for="verbInput">A past tense verb</label>
+        <input id="verbInput" type="text" name="verbInput" placeholder="A Past Tense Verb" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label for="nounInput">A noun</label>
+        <input id="nounInput" type="text" name="nounInput" placeholder="A Noun" class="form-control"/>
+      </div>
+      <button type="submit" class="btn btn-primary">Show me the story!</button>
+    </form>
+    <br />
+    <div class="container">
+      <button type="button" class="hidden" id="reset">Reset</button>  
+    </div>
 
-  <div id="story" class="hidden">
-    <h1>A Fantastical Adventure</h1>
-    <p>
-      One day, <span id="person1a">_________</span> and <span id="person2a">_________</span> were walking through the woods, when suddenly a giant <span id="animal">_________</span> appeared. "<span id="exclamation">_________</span>", <span id="person1b">_________</span> cried. The two of them <span id="verb">_________</span> as quickly as possible, and when they were safe, <span id="person1c">_________</span> and <span id="person2b">_________</span> gave each other a giant <span id="noun">_________</span>.
-    </p>
-  </div>
-</body>
+    <div id="story" class="hidden container">
+      <h1 class="container">A Fantastical Adventure</h1>
+      <p class="container">
+        One day, <span id="person1a">_________</span> and
+        <span id="person2a">_________</span> were walking through the woods,
+        when suddenly a giant <span id="animal">_________</span> appeared.
+        "<span id="exclamation">_________</span>",
+        <span id="person1b">_________</span> cried. The two of them
+        <span id="verb">_________</span> as quickly as possible, and when they
+        were safe, <span id="person1c">_________</span> and
+        <span id="person2b">_________</span> gave each other a giant
+        <span id="noun">_________</span>.
+      </p>
+    </div>
+  </body>
 </html>
